@@ -1,14 +1,16 @@
 package olga.javatasks.task1.sandbox;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PointTests {
 
-    @Test
+@Test
+
     public void testDistance() {
-        Point p1 = new Point(4, 3);
+        Point p1 = new Point(1, 0);
         Point p2 = new Point(0, 0);
-        assert p1.distance(p2) == 5;
+    Assert.assertEquals(p1.distance(p2), 1.0);
     }
 
 }
