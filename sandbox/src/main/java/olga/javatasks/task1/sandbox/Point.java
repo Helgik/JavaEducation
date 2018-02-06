@@ -1,3 +1,5 @@
+package olga.javatasks.task1.sandbox;
+
 public class Point {
 
     public double x;
