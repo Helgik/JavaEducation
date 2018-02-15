@@ -1,4 +1,4 @@
-package olga.javatasks.addressbook;
+package olga.javatasks.addressbook.model;
 
 public class GroupData {
     private final String name;

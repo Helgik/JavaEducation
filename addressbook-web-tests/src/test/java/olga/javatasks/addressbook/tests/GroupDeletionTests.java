@@ -1,4 +1,4 @@
-package olga.javatasks.addressbook;
+package olga.javatasks.addressbook.tests;
 
 import org.testng.annotations.Test;
 

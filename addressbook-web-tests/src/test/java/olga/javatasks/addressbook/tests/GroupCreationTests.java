@@ -1,5 +1,6 @@
-package olga.javatasks.addressbook;
+package olga.javatasks.addressbook.tests;
 
+import olga.javatasks.addressbook.model.GroupData;
 import org.testng.annotations.Test;
 
 public class GroupCreationTests extends TestBase {

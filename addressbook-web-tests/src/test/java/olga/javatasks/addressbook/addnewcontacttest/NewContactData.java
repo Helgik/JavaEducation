@@ -1,4 +1,4 @@
-package olga.javatasks.addressbook;
+package olga.javatasks.addressbook.addnewcontacttest;
 
 public class NewContactData {
     private final String firstname;

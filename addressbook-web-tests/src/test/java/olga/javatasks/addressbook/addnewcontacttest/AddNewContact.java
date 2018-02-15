@@ -1,4 +1,4 @@
-package olga.javatasks.addressbook;
+package olga.javatasks.addressbook.addnewcontacttest;
 
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeMethod;
