@@ -8,7 +8,7 @@ public class GroupCreationTests extends TestBase {
     public void testGroupCreation() {
         goToGroupPage();
         initGroupCreation();
-        fillGroupForm(new GroupData("test1", "test2", "test3"));
+        fillGroupForm(new GroupData("some info", "blabla", "more info"));
         submitGroupForm();
         returnToGroupPage();
     }
