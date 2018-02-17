@@ -49,27 +49,8 @@ public class ApplicationManager {
         return navigationHelper;
     }
 
-    public void goToNewContactCreationPage() {
-        wd.findElement(By.linkText("ADD_NEW")).click();
-    }
 
-    public void fillNewContactForm(NewContactData newContactData) {
-        wd.findElement(By.name("firstname")).click();
-        wd.findElement(By.name("firstname")).clear();
-        wd.findElement(By.name("firstname")).sendKeys(newContactData.getFirstname());
-        wd.findElement(By.name("lastname")).click();
-        wd.findElement(By.name("lastname")).clear();
-        wd.findElement(By.name("lastname")).sendKeys(newContactData.getLastname());
-        wd.findElement(By.name("address")).click();
-        wd.findElement(By.name("address")).clear();
-        wd.findElement(By.name("address")).sendKeys(newContactData.getAddress());
-        wd.findElement(By.name("mobile")).click();
-        wd.findElement(By.name("mobile")).clear();
-        wd.findElement(By.name("mobile")).sendKeys(newContactData.getMobile());
-        wd.findElement(By.name("email")).click();
-        wd.findElement(By.name("email")).clear();
-        wd.findElement(By.name("email")).sendKeys(newContactData.getEmail());
-    }
+
 
     public ContactHelper getContactHelper() {
         return contactHelper;

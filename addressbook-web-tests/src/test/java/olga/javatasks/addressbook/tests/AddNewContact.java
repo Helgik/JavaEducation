@@ -7,8 +7,8 @@ public class AddNewContact extends TestBase {
 
     @Test
     public void AddNewContact() {
-        app.goToNewContactCreationPage();
-        app.fillNewContactForm(new NewContactData("Jason", "Statham", "LA", "+00449794648", "jason@statham.com"));
+        app.getNavigationHelper().goToNewContactCreationPage();
+        app.getContactHelper().fillNewContactForm(new NewContactData("Arnold", "Schvarzenegger", "LA", "+00449794648", "arni@schvarz.com"));
         app.getContactHelper().submitNewContactCreationForm();
         app.getContactHelper().returnToAddressbookPage();
     }
