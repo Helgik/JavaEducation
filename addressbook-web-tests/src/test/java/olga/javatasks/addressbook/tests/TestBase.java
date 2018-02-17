@@ -17,5 +17,8 @@ public class TestBase {
     public void tearDown() {
         app.stop();
     }
-
+// убрать?
+    public ApplicationManager getApp() {
+        return app;
+    }
 }
