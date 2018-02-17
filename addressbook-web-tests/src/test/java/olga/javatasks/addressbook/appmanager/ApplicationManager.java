@@ -1,7 +1,5 @@
 package olga.javatasks.addressbook.appmanager;
 
-import olga.javatasks.addressbook.model.NewContactData;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -37,7 +35,7 @@ public class ApplicationManager {
         sessionHelper.login("admin", "secret");
     }
 
-       public void stop() {
+    public void stop() {
         wd.quit();
     }
 
@@ -48,9 +46,6 @@ public class ApplicationManager {
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
-
-
-
 
     public ContactHelper getContactHelper() {
         return contactHelper;
