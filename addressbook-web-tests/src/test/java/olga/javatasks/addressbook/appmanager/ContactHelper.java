@@ -27,8 +27,8 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectContact() {
-        if (!wd.findElement(By.id("27")).isSelected()) {
-            wd.findElement(By.id("27")).click();
+        if (!wd.findElement(By.id("37")).isSelected()) {
+            wd.findElement(By.id("37")).click();
     }
 }
 
@@ -36,8 +36,15 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     }
 
-
     public void confirmDeletionPopup() {
         wd.switchTo().alert().accept();
+    }
+
+    public void clickEditContactButton() {
+        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+    }
+
+    public void clickUpdateContactButton() {
+        click(By.xpath("//div[@id='content']/form[1]/input[22]"));
     }
 }
