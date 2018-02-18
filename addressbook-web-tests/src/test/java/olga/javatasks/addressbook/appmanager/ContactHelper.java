@@ -25,4 +25,19 @@ public class ContactHelper extends HelperBase {
         type(By.name("mobile"), newContactData.getMobile());
         type(By.name("email"), newContactData.getEmail());
     }
+
+    public void selectContact() {
+        if (!wd.findElement(By.id("27")).isSelected()) {
+            wd.findElement(By.id("27")).click();
+    }
+}
+
+    public void deleteSelectedContact() {
+        click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+    }
+
+
+    public void confirmDeletionPopup() {
+        wd.switchTo().alert().accept();
+    }
 }
