@@ -3,18 +3,17 @@ package olga.javatasks.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigationHelper {
-    private FirefoxDriver wd;
+public class NavigationHelper extends HelperBase {
 
     public NavigationHelper(FirefoxDriver wd) {
-        this.wd = wd;
+        super(wd);
     }
 
     public void goToGroupPage() {
-        wd.findElement(By.linkText("GROUPS")).click();
+        click(By.linkText("GROUPS"));
     }
 
     public void goToNewContactCreationPage() {
-        wd.findElement(By.linkText("ADD_NEW")).click();
+        click(By.linkText("ADD_NEW"));
     }
 }
