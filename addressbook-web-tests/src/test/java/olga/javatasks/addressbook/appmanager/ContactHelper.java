@@ -2,11 +2,12 @@ package olga.javatasks.addressbook.appmanager;
 
 import olga.javatasks.addressbook.model.NewContactData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ContactHelper extends HelperBase {
 
-    public ContactHelper(FirefoxDriver wd) {
+    public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -27,8 +28,8 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectContact() {
-        if (!wd.findElement(By.id("37")).isSelected()) {
-            wd.findElement(By.id("37")).click();
+        if (!wd.findElement(By.id("22")).isSelected()) {
+            wd.findElement(By.id("22")).click();
     }
 }
 
