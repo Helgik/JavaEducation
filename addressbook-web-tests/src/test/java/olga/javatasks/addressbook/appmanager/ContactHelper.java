@@ -3,7 +3,6 @@ package olga.javatasks.addressbook.appmanager;
 import olga.javatasks.addressbook.model.NewContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ContactHelper extends HelperBase {
 
