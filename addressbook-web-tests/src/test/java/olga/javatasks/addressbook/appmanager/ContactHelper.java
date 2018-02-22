@@ -27,9 +27,13 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectContact() {
-        if (!wd.findElement(By.id("22")).isSelected()) {
+        // the commented below selects the defined contact by locator id:
+ /*       if (!wd.findElement(By.id("22")).isSelected()) {
             wd.findElement(By.id("22")).click();
-    }
+    } */
+        if (!wd.findElement(By.name("selected[]")).isSelected()) {
+            click(By.name("selected[]"));
+        }
 }
 
     public void deleteSelectedContact() {
