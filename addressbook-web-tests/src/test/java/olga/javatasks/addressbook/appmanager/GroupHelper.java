@@ -2,7 +2,6 @@ package olga.javatasks.addressbook.appmanager;
 
 import olga.javatasks.addressbook.model.GroupData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class GroupHelper extends HelperBase {
@@ -33,11 +32,9 @@ public class GroupHelper extends HelperBase {
         click(By.name("delete"));
     }
 
-    public void selectGroup() {
-        if (!wd.findElement(By.name("selected[]")).isSelected()) {
-            click(By.name("selected[]"));
+    public void selectGroup(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
         }
-    }
 
     public void initGroupModification() {
         click(By.name("edit"));
